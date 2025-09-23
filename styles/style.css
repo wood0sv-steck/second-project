@@ -1,0 +1,147 @@
+h2 {
+  padding-bottom: 48px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0%;
+}
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 88px;
+}
+.header__logo {
+  display: flex;
+}
+.social {
+  display: flex;
+}
+.about {
+  display: flex;
+  padding-bottom: 88px;
+}
+.avatar {
+  width: 384px;
+  height: 384px;
+  border-width: 4px;
+}
+.feature__menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.feature {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+.portfolio {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+.portfolio__card {
+   display: flex;
+   column-gap: 16px;
+}
+.portfolio__card-overlay{
+   position: relative;
+  z-index:2;
+}
+.overlay{
+position:absolute;
+inset:0;
+z-index:1;
+background-color:rgba(0,0,0,0.4);
+}
+.card {
+  z-index:2;
+  width: 304px;
+  height: 304px;
+  padding: 164px 113px 84px 33px;
+}
+.card-type-chamarel {
+  background-image: url(../images/portfolio/chamarel.png);
+}
+.card-type-gymkhana {
+  background-image: url(../images/portfolio/gymkhana.png);
+}
+.card-type-tamarind {
+  background-image: url(../images/portfolio/tamarind.svg);
+}
+.portfolio__card-button {
+  position: absolute;
+  bottom: 20px;
+  display: block;
+  width: 120px;
+  height: 36px;
+  border: none;
+  border-radius: 5px;
+  color: currentColor;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 130%;
+  background: #ec1f46;
+}
+.gallery {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+.gallery__card {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+.feedback__form {
+  display: flex;
+}
+.feedback {
+  gap: 16px;
+  width: 464px;
+  height: 422px;
+  border-radius: 5px;
+  padding: 38px 32px 42px;
+}
+.button {
+  margin-top: 25px;
+}
+.contact {
+  display: flex;
+}
+.feedback__form-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__form-input {
+  width: 400px;
+  height: 70px;
+}
