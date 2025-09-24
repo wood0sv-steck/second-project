@@ -1,3 +1,9 @@
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0%;
+}
 h2 {
   padding-bottom: 48px;
   font-family: "Roboto";
@@ -25,6 +31,19 @@ p {
   line-height: 28px;
   letter-spacing: 0%;
 }
+.button {
+  border-radius: 5px;
+  border: 1px;
+  background: #ffbb01;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #1b2944;
+  box-shadow: 0 4px #ffbb0181;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -46,10 +65,28 @@ header {
   height: 384px;
   border-width: 4px;
 }
+.about__name > h3 {
+  color: #ffbb01;
+  padding-bottom: 12px;
+}
+.about__name > h1 {
+  padding-bottom: 24px;
+}
+.about__name > p {
+  padding-bottom: 36px;
+}
+.about__name {
+  padding: 36.5px 0;
+}
+.about__button {
+  width: 300px;
+  height: 66px;
+}
 .feature__menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  row-gap: 48px;
 }
 .feature {
   padding-top: 88px;
@@ -60,21 +97,21 @@ header {
   padding-bottom: 88px;
 }
 .portfolio__card {
-   display: flex;
-   column-gap: 16px;
+  display: flex;
+  column-gap: 16px;
 }
-.portfolio__card-overlay{
-   position: relative;
-  z-index:2;
+.portfolio__card-overlay {
+  position: relative;
+  z-index: 2;
 }
-.overlay{
-position:absolute;
-inset:0;
-z-index:1;
-background-color:rgba(0,0,0,0.4);
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .card {
-  z-index:2;
+  z-index: 2;
   width: 304px;
   height: 304px;
   padding: 164px 113px 84px 33px;
@@ -101,6 +138,10 @@ background-color:rgba(0,0,0,0.4);
   font-size: 12px;
   line-height: 130%;
   background: #ec1f46;
+  z-index: 3;
+}
+.card > h4 {
+  z-index: 3;
 }
 .gallery {
   padding-top: 88px;
@@ -109,6 +150,7 @@ background-color:rgba(0,0,0,0.4);
 .gallery__card {
   display: flex;
   flex-wrap: wrap;
+  gap: 16px;
 }
 .footer {
   padding-top: 88px;
@@ -144,4 +186,8 @@ background-color:rgba(0,0,0,0.4);
 .feedback__form-input {
   width: 400px;
   height: 70px;
+}
+.feedback__form-button {
+  width: 400px;
+  height: 66px;
 }
