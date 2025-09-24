@@ -32,17 +32,17 @@ p {
   letter-spacing: 0%;
 }
 .button {
-  border-radius: 5px;
   border: 1px;
-  background: #ffbb01;
+  border-radius: 5px;
+  vertical-align: middle;
+  box-shadow: 0 4px #ffbb0181;
+  color: #1b2944;
   font-weight: 700;
   font-size: 12px;
   line-height: 130%;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
-  color: #1b2944;
-  box-shadow: 0 4px #ffbb0181;
+  background: #ffbb01;
 }
 header {
   display: flex;
@@ -55,6 +55,7 @@ header {
 }
 .social {
   display: flex;
+  gap: 16px;
 }
 .about {
   display: flex;
@@ -66,8 +67,8 @@ header {
   border-width: 4px;
 }
 .about__name > h3 {
-  color: #ffbb01;
   padding-bottom: 12px;
+  color: #ffbb01;
 }
 .about__name > h1 {
   padding-bottom: 24px;
@@ -128,6 +129,7 @@ header {
 .portfolio__card-button {
   position: absolute;
   bottom: 20px;
+  z-index: 3;
   display: block;
   width: 120px;
   height: 36px;
@@ -138,7 +140,6 @@ header {
   font-size: 12px;
   line-height: 130%;
   background: #ec1f46;
-  z-index: 3;
 }
 .card > h4 {
   z-index: 3;
@@ -160,18 +161,15 @@ header {
   display: flex;
 }
 .feedback {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
   width: 464px;
   height: 422px;
   border-radius: 5px;
   padding: 38px 32px 42px;
 }
-.button {
-  margin-top: 25px;
-}
-.contact {
-  display: flex;
-}
+
 .feedback__form-title {
   font-weight: 700;
   font-size: 18px;
@@ -179,15 +177,42 @@ header {
   letter-spacing: 0%;
   text-align: center;
 }
-.feedback {
-  display: flex;
-  flex-direction: column;
-}
+
 .feedback__form-input {
   width: 400px;
   height: 70px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(#ccc, #fff, #ccc);
 }
 .feedback__form-button {
   width: 400px;
   height: 66px;
+}
+.feedback__form-input::placeholder {
+  vertical-align: middle;
+  color: #949494;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+}
+/* .feedback__form-input::placeholder::before{
+  content:"url(../images/icon/user-icon.svg)" ;
+  position: absolute;
+  inset:0;
+} */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: start;
+  row-gap: 32px;
+  column-gap: 96px;
+  max-height: 64px;
+  padding-left: 96px;
+}
+.contact__social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
